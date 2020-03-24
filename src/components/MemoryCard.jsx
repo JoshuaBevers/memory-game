@@ -3,7 +3,11 @@ import "./MemoryCard.css";
 
 class MemoryCard extends Component {
   render() {
-    return <div className="MemoryCard">Hello</div>;
+    return (
+      <div className="MemoryCard">
+        <img src="./digitalcrafts.png" alt="" className="Image"></img>
+      </div>
+    );
   }
 }
 
