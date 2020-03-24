@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import logo from "./digitalcrafts.png";
 import "./MemoryCard.css";
 
 class MemoryCard extends Component {
   render() {
     return (
       <div className="MemoryCard">
-        <img src="./digitalcrafts.png" alt="" className="Image"></img>
+        <img src={logo} alt="" className="Image"></img>
+        hello
       </div>
     );
   }
