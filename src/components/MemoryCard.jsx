@@ -7,7 +7,6 @@ class MemoryCard extends Component {
     return (
       <div className="MemoryCard">
         <img src={logo} alt="" className="Image"></img>
-        hello
       </div>
     );
   }

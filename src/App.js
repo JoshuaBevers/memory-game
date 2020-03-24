@@ -11,7 +11,30 @@ function App() {
         <h1>Memory game</h1>
         <p>Match cards to win</p>
       </header>
-      <MemoryCard />
+      <div className="row">
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div className="row">
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div className="row">
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div className="row">
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
     </div>
   );
 }
