@@ -24,7 +24,8 @@
   transform: rotateY(180deg);
 }
 
-.flipped {
+.MemoryCardFront,
+.MemoryCardBack .flipped {
   transform: rotateY(180deg);
 }
 
@@ -47,8 +48,7 @@
   backface-visibility: hidden;
 }
 
-.MemoryCardFront,
-.MemoryCardBack .Image {
+.Image {
   width: 100%;
   padding-top: 13px;
 }
