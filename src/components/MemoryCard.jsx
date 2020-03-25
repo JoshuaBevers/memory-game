@@ -13,8 +13,8 @@ class MemoryCard extends Component {
 
   render() {
     let memoryCardInnerClass = "MemoryCardInner";
-    memoryCardInnerClass = this.state.isFlipped
-      ? true
+    let flipCard = this.state.isFlipped
+      ? false
       : (memoryCardInnerClass = "MemoryCardInner flipped");
     // if (this.state.isFlipped === true) {
     //   memoryCardInnerClass = "MemoryCardInner flipped";
