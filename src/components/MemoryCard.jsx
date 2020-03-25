@@ -7,16 +7,12 @@ class MemoryCard extends Component {
     super();
     this.state = { isFlipped: true };
   }
-
   clickHandler = () => {
     this.setState({ isFlipped: !this.state.isFlipped });
   };
 
   render() {
     let memoryCardInnerClass = "MemoryCardInner";
-    memoryCardInnerClass = this.state.isFlipped
-      ? false
-      : (memoryCardInnerClass = "MemoryCardInner");
     memoryCardInnerClass = this.state.isFlipped
       ? true
       : (memoryCardInnerClass = "MemoryCardInner flipped");
