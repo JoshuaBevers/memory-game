@@ -47,7 +47,8 @@
   backface-visibility: hidden;
 }
 
-.Image {
+.MemoryCardFront,
+.MemoryCardBack .Image {
   width: 100%;
   padding-top: 13px;
 }
