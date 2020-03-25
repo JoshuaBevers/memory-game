@@ -5,8 +5,13 @@ import "./MemoryCard.css";
 class MemoryCard extends Component {
   render() {
     return (
-      <div className="MemoryCard">
-        <img src={logo} alt="" className="Image"></img>
+      <div className="MemoryCardInner">
+        <div className="MemoryCardFront">
+          ∆
+          <div className="MemoryCardBack">
+            <img src={logo} alt="" className="Image"></img>
+          </div>
+        </div>
       </div>
     );
   }
