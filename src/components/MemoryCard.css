@@ -24,11 +24,6 @@
   transform: rotateY(180deg);
 }
 
-.MemoryCardFront,
-.MemoryCardBack .flipped {
-  transform: rotateY(180deg);
-}
-
 .MemoryCardInner {
   width: 100%;
   height: 100%;
@@ -51,4 +46,9 @@
 .Image {
   width: 100%;
   padding-top: 13px;
+}
+
+.MemoryCardFront,
+.MemoryCardInner.flipped {
+  transform: rotateY(180deg);
 }
