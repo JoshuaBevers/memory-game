@@ -5,20 +5,24 @@ import "./MemoryCard.css";
 class MemoryCard extends Component {
   constructor() {
     super();
-    this.state = { isFlipped: false };
+    this.state = { isFlipped: true };
   }
 
   clickHandler = () => {
-    console.log("this is being called.");
     this.setState({ isFlipped: !this.state.isFlipped });
-    console.log(this.state.isFlipped);
   };
 
   render() {
     let memoryCardInnerClass = "MemoryCardInner";
-    if (this.state.isFlipped === true) {
-      memoryCardInnerClass = "MemoryCardInner flipped";
-    }
+    memoryCardInnerClass = this.state.isFlipped
+      ? false
+      : (memoryCardInnerClass = "MemoryCardInner");
+    memoryCardInnerClass = this.state.isFlipped
+      ? true
+      : (memoryCardInnerClass = "MemoryCardInner flipped");
+    // if (this.state.isFlipped === true) {
+    //   memoryCardInnerClass = "MemoryCardInner flipped";
+    // }
 
     return (
       <div className="MemoryCard" onClick={this.clickHandler}>
